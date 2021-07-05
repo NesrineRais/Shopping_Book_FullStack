@@ -1,0 +1,288 @@
+.App {
+    text-align: center;
+    font-family: "Oswald-Regular", Arial, sans-serif;
+}
+
+.header-nav nav {
+    text-align: left;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header-nav nav .list1, .header-nav nav .list2 {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-nav nav .list1 a, .header-nav nav .list2 a {
+    text-decoration: none;
+    font-family: 'Fjalla One', cursive;
+    color: black;
+    font-size: 18px;
+    padding: 15px;
+}
+.header-nav .header-pict {
+    text-align: center;
+    padding: 180px 0 80px 0;
+    background-image: url(./media/LIVRES-DONNER-VENDRE.jpg);
+    text-shadow: 0 2px 0 black, 0 -2px 0 black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.background_opacity {
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.header-nav .header-pict h1 {
+    font-size: 36px;
+    color: #FFBD2F;
+    font-family: 'Indie Flower', cursive;
+    margin: auto;
+    margin-top: -40px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 6;
+}
+main {
+    width: 70%;
+    margin: 25px auto;
+}
+#homerHome {
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+.product-mosaic {
+    text-align: center;
+    width: 25% ;
+    display: inline-block;
+    padding: 10px 1%;
+    vertical-align: top;
+    border: 2px solid #FFBD2F;
+    border-radius: 5%;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 25px;
+}
+  
+.product-mosaic a {
+    text-decoration: none;
+    color: black;
+}
+.product-mosaic h3 {
+    color: black;
+    font-size: 22px;
+}
+.product-mosaic img.product-img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+.product-mosaic p {
+    height: 50px;
+}
+.paymentPart {
+    display: flex;
+    justify-content: space-around;
+}
+.paymentPart span {
+    display: block;
+    width: 50%;
+    font-family: 'Indie Flower', cursive;
+    color: #FFBD2F;
+    font-size: 23px;
+    text-shadow: 0 1px 0 black, 0 -1px 0 black;
+}
+.paymentPart form {
+    width: 50%;
+}
+
+/* //modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .modal-main {
+    position:fixed;
+    background: white;
+    width: 80%;
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .display-block {
+    display: block;
+  }
+  
+  .display-none {
+    display: none;
+  }
+
+  .red-error {
+    border: 1px solid red;
+}
+
+.popUp {
+    border: 2px solid #FFBD2F;
+    border-radius: 20px;
+    position: fixed;
+    top: 100px;
+    left: 32%;
+    z-index: 15;
+    background-color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.popUp .closePopUp {
+    width: 15%;
+    margin: 5px 20px 0 91%;
+    cursor: pointer;
+}
+
+.popUp img {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.popUp button.closePopUp {
+    width: 80%;
+    margin: auto;
+    background-color: #FFBD2F;
+    color: white;
+    text-shadow: 0 1px 0 #c4c3c2, 0 -1px 0 #c4c3c2;
+    margin-top: 10px;
+    height: 42px;
+    border-radius: 12px;
+    border: 1px solid #c4c3c2;
+    padding-left: 3%;
+    outline: none;
+}
+.addBeer {
+    color: #FFBD2F;
+    font-family: 'Fjalla One', cursive;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.b-form {
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    border: 2px solid #FFBD2F;
+    border-radius: 12px;
+    padding: 10px 2% 20px 2%;
+}
+
+.b-form input {
+    font-family: 'Fjalla One', cursive;
+    display: block;
+    width: 87%;
+    margin: auto;
+    margin-top: 10px;
+    height: 32px;
+    border-radius: 12px;
+    border: 1px solid #c4c3c2;
+    padding-left: 3%;
+    outline: none;
+}
+
+.b-form textarea {
+    font-family: 'Fjalla One', cursive;
+    display: block;
+    width: 87%;
+    margin: auto;
+    margin-top: 10px;
+    min-height: 70px;
+    border-radius: 12px;
+    border: 1px solid #c4c3c2;
+    padding-left: 3%;
+    outline: none;
+}
+
+.b-form input[type="submit"] {
+    background-color: #FFBD2F;
+    width: 35%;
+    color: white;
+    text-shadow: 0 1px 0 #c4c3c2, 0 -1px 0 #c4c3c2;
+}
+.tableBeer {
+    border: 2px solid #FFBD2F;
+    border-radius: 12px;
+    padding: 15px 2%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.admin-img{
+    width: 300px;
+}
+
+.tableBeer tr {
+    border: 2px solid #FFBD2F;
+}
+.tableBeer td {
+    padding: 10px 2%;
+}
+
+
+
+
+.FormGroup {
+    margin: 0 15px 20px;
+    padding: 0;
+    border-style: none;
+    background-color: #7795f8;
+    will-change: opacity, transform;
+    box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
+      inset 0 1px 0 #829fff;
+    border-radius: 4px;
+  }
+  
+  .FormRow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 15px;
+    border-top: 1px solid #819efc;
+  }
+  
+  .StripeElement--webkit-autofill {
+    background: transparent !important;
+  }
+  
+  .StripeElement {
+    width: 100%;
+    padding: 11px 15px 11px 0;
+  }
+  .formStripe {
+    width: 500px;
+    margin: auto;
+}

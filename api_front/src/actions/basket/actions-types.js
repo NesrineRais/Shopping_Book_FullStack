@@ -1,0 +1,4 @@
+export const MODIFY_BASKET = "MODIFY_BASKET";
+export const REMOVE_TO_BASKET = "REMOVE_TO_BASKET";
+
+export const CLEAN_BASKET = "CLEAN_BASKET";
